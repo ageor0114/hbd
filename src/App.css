@@ -1,38 +1,105 @@
+@import 'https://fonts.googleapis.com/css?family=Monoton';
+@import 'https://fonts.googleapis.com/css?family=VT323';
+@import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
+
+body{
+  background-color: #000080;
+}
+
+.title
+{
+  font-size: 60px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
 .App {
   text-align: center;
+  background-color: #000080;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 700px)
+{
+  .title{
+    font-size: 100px;
+  }
+  .App{
+    width: 700px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
+.music{
+  color: white;
+  font-size: calc(20px + 2vmin);
+}
+
+.link{
+  color: white;
+}
+
 .App-header {
-  background-color: #282c34;
+  //background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: white;
+}
+
+.content{
+  font-family: 'VT323';
+  color: #48dbfb;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.footer{
+  height: 100px;
+}
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #48dbfb, 0 0 70px #48dbfb, 0 0 80px #48dbfb, 0 0 100px #48dbfb, 0 0 150px #48dbfb;
   }
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #48dbfb, 0 0 35px #48dbfb, 0 0 40px #48dbfb, 0 0 50px #48dbfb, 0 0 75px #48dbfb;
+  }
+}
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #48dbfb, 0 0 70px #48dbfb, 0 0 80px #48dbfb, 0 0 100px #48dbfb, 0 0 150px #48dbfb;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #48dbfb, 0 0 35px #48dbfb, 0 0 40px #48dbfb, 0 0 50px #48dbfb, 0 0 75px #48dbfb;
+  }
+}
+
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #48dbfb, 0 0 70px #48dbfb, 0 0 80px #48dbfb, 0 0 100px #48dbfb, 0 0 150px #48dbfb;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #48dbfb, 0 0 35px #48dbfb, 0 0 40px #48dbfb, 0 0 50px #48dbfb, 0 0 75px #48dbfb;
   }
 }
