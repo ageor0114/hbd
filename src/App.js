@@ -6,7 +6,7 @@ import BottomScrollListener from 'react-bottom-scroll-listener';
 
 function App() {
   let title = "HAPPY BIRTHDAY JOSIAH!";
-  let intro = "You're officially 18 lmao!!! 🔞🍻🔞🤑 How does it feel?!";
+  let intro = "You're officially 18 lmao!!!! 🔞🍻🔞🤑 How does it feel?!";
   let eighteen = "18 years is like a lot ...";
   let comparison = "That's fucking od lol";
   let message = "I literally cannot wait for the next 4 amazing years at Cal! Even if we don't get to see each other b/c of rona in the fall🤮, it's gonna be hype as fuck when we finally move in (fingers crossed Blackwell 🤞🏾) & start blasting";
